@@ -59,3 +59,7 @@ body:has(#dark:checked) {
     --display-dark: initial;
   }
 }
+
+footer {
+  margin-top: 2rem;
+}
