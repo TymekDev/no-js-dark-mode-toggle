@@ -9,9 +9,14 @@ thanks to [`:has()` CSS selector][].
 
 [`:has()` CSS selector]: https://developer.mozilla.org/en-US/docs/Web/CSS/:has
 
-`:has()` premise is simple. Select a parent that has a given children. The
-children are specified by a selector passed to `:has()`. This allows us to write
-a following chunk of HTML and CSS:
+`:has()` premise is simple. Select a parent that has a given selector. Be it
+children or sibling using `+` or `~`. With Firefox stable adding support for
+`:has()` last month, [the browser support reached 90% according to
+caniuse.com][]!
+
+[the browser support reached 90% according to caniuse.com]: https://caniuse.com/css-has
+
+Without further ado, let's start with HTML for the toggle:
 
 ```html
 <!-- ... -->
@@ -49,8 +54,7 @@ There are a couple more things that we can do such as:
 - Changing labels based on the theme we are in
 - `@media (prefers-color-scheme: dark)` support
 
-I have created an example page with these improvements. You can view it at
-[tymekdev.github.io/no-js-dark-mode-toggle][] and [its source code on GitHub][].
+In this repository you will find an implementation with these improvements. You
+can a deployed version at [tymekdev.github.io/no-js-dark-mode-toggle][].
 
 [tymekdev.github.io/no-js-dark-mode-toggle]: https://tymekdev.github.io/no-js-dark-mode-toggle
-[its source code on GitHub]: https://github.com/TymekDev/no-js-dark-mode-toggle
