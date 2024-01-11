@@ -1,0 +1,61 @@
+/* Baseline */
+body {
+  --bg: #fff;
+  --fg: #000;
+  color: var(--fg);
+  background-color: var(--bg);
+}
+
+body:has(#dark:checked) {
+  --bg: #000;
+  --fg: #fff;
+}
+
+/* Making the toggle a bit nicer */
+#dark {
+  display: none;
+}
+
+#theme-toggle {
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  text-decoration: underline;
+}
+
+/* Label switching support */
+body {
+  --display-light: none;
+  --display-dark: initial;
+}
+
+body:has(#dark:checked) {
+  --display-light: initial;
+  --display-dark: none;
+}
+
+#theme-toggle span:first-of-type {
+  display: var(--display-light);
+}
+
+#theme-toggle span:last-of-type {
+  display: var(--display-dark);
+}
+
+/* Support for system theme */
+@media (prefers-color-scheme: dark) {
+  body {
+    --bg: #000;
+    --fg: #fff;
+    --display-light: initial;
+    --display-dark: none;
+  }
+
+  body:has(#dark:checked) {
+    --bg: #fff;
+    --fg: #000;
+    --display-light: none;
+    --display-dark: initial;
+  }
+}
