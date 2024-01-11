@@ -18,9 +18,6 @@ body:has(#dark:checked) {
 
 #theme-toggle {
   cursor: pointer;
-}
-
-#theme-toggle:hover {
   text-decoration: underline;
 }
 
