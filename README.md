@@ -54,7 +54,9 @@ There are a couple more things that we can do such as:
 - Changing labels based on the theme we are in
 - `@media (prefers-color-scheme: dark)` support
 
+---
+
 In this repository you will find an implementation with these improvements. You
-can a deployed version at [tymekdev.github.io/no-js-dark-mode-toggle][].
+can view a deployed version at [tymekdev.github.io/no-js-dark-mode-toggle][].
 
 [tymekdev.github.io/no-js-dark-mode-toggle]: https://tymekdev.github.io/no-js-dark-mode-toggle
