@@ -1,6 +1,6 @@
 _This is an excerpt from [my blog post published on 2024-01-11][]._
 
-[my blog post published on 2024-01-11]: https://blog.tymek.dev/posts/2024/01/a-dark-mode-toggle-without-javascript
+[my blog post published on 2024-01-11]: https://blog.tymek.dev/no-js-dark-mode-toggle/
 
 ## A Dark Mode Toggle Without JavaScript
 Have you ever seen a toggle on a website that allows you to switch between a
